@@ -1,0 +1,52 @@
+.heroSectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36px;
+
+    height: 100vh;
+}
+
+.heroHeader {
+    font-family: 'Clash Grotesk', Arial, sans-serif;
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 158px;
+    text-align: left;
+
+    background: linear-gradient(109.22deg, #B53EA4 3.07%, #FC6F32 47.61%, #FF4A59 93.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heroButtonContainer {
+    display: flex;
+    gap: 24px;
+}
+
+.heroImage {
+    position: absolute;
+    width: 1016px;
+    height: 1016px;
+    top: 153.38px;
+    right: 0;
+    z-index: -1;
+}
+
+.blob01 {
+    position: absolute;
+    width: 1016px;
+    height: 1016px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.blob02 {
+    position: absolute;
+    width: 1016px;
+    height: 1016px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}

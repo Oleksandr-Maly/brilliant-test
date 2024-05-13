@@ -1,0 +1,13 @@
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionHeader {
+    font-family: 'Clash Grotesk';
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 78.72px;
+    text-align: center;
+    color: #fff;
+}

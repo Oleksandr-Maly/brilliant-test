@@ -1,0 +1,15 @@
+.footerContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.footerText {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
