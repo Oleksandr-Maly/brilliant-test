@@ -18,8 +18,8 @@ const AnimatedPlanetImage = () => {
 
         gsap.to(startTrigger, {
             scrollTrigger: {
-                trigger: '#planet-image', // start when the first section hits the top
-                endTrigger: endTrigger, // end when the fourth section leaves the top
+                trigger: '#planet-image',
+                endTrigger: endTrigger,
                 start: 'top top',
                 end: 'top bottom',
                 scrub: 1,
