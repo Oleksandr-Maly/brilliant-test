@@ -1,5 +1,5 @@
 'use client';
-import styles from './section-contacts.module.css';
+import styles from './section-contacts.module.scss';
 import Image from "next/image";
 import footerImage from "@/public/images/contact-section-image.png";
 
@@ -20,8 +20,8 @@ const SectionContacts = () => {
                 Let the fate of AI be in our hands and not that of big tech companies.
             </p>
             <div className={styles.contactsButtonContainer}>
-                <button>telegram</button>
-                <button>X</button>
+                <button className={`${styles.iconButton} ${styles.telegramIcon}`}/>
+                <button className={`${styles.iconButton} ${styles.xIcon}`}/>
             </div>
         </section>
     );

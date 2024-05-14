@@ -1,6 +1,6 @@
 'use client';
-import styles from './section-about.module.css';
-import buttonStyles from '@/components/gradient-button/gradient-button.module.css';
+import styles from './section-about.module.scss';
+import buttonStyles from '@/components/gradient-button/gradient-button.module.scss';
 
 const SectionAbout = () => {
     return (

@@ -1,6 +1,6 @@
 'use client';
-import styles from "./header.module.css";
-import buttonStyles from "@/components/gradient-button/gradient-button.module.css";
+import styles from "./header.module.scss";
+import buttonStyles from "@/components/gradient-button/gradient-button.module.scss";
 
 const Header = () => {
     const onMoveToTableButtonCLick = () => {

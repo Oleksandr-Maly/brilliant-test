@@ -1,4 +1,4 @@
-import styles from './section-clients.module.css';
+import styles from './section-clients.module.scss';
 
 const SectionClients = () => {
     return (

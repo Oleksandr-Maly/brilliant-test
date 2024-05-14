@@ -1,0 +1,22 @@
+@import '../../../styles/_mixins.module.scss';
+
+.header {
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    top: 2rem;
+
+
+    @include respond('mobile') {
+        gap: 1.5rem;
+    }
+
+    @include respond('tablet') {
+        gap: 2rem;
+    }
+}
