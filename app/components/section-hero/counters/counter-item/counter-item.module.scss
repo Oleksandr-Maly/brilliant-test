@@ -1,0 +1,58 @@
+@import '@/styles/_variables.module.scss';
+@import '@/styles/_mixins.module.scss';
+
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  padding: 1rem;
+  gap: 0.5rem;
+
+  border-radius: 25rem;
+
+  background: $countersGradient;
+  @include respond('desktop') {
+    width: 100%;
+    padding: 2rem;
+    gap: 20px;
+  }
+}
+
+.counterValue {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  @include respond('tablet') {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  @include respond('desktop') {
+    font-size: 4rem;
+
+    line-height: 5rem;
+  }
+
+}
+
+.counterTitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #fff;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  @include respond('desktop') {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
