@@ -1,10 +1,11 @@
 import styles from './section-leaderboard.module.scss';
 import buttonStyles from '@/components/gradient-button/gradient-button.module.scss';
+import LeaderboardTable from "@/app/components/section-leaderboard/leaderboard-table/leaderboard-table";
 
 
 const SectionLeaderboard = () => {
     return (
-        <section className={styles.sectionContainer}>
+        <section id={'section-leaderboard'} className={styles.sectionContainer}>
             <div className={styles.headerContainer}>
                 <h2 className={styles.sectionHeader}>LLM Leaderboard</h2>
                 <button className={buttonStyles.outlineButton} data-content={'Submit your model'}/>
@@ -15,6 +16,8 @@ const SectionLeaderboard = () => {
                 different evaluation tasks.
                 The higher the score, the better the LLM.
             </p>
+
+            <LeaderboardTable/>
         </section>
     );
 };

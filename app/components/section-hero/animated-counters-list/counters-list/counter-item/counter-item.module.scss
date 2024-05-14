@@ -1,7 +1,10 @@
-@import '@/styles/_variables.module.scss';
-@import '@/styles/_mixins.module.scss';
+@import '../../../../../../styles/__variables.module';
+@import '../../../../../../styles/__mixins.module';
 
 .counterContainer {
+  //set opacity to 0 to hide on first render before animation styles applies
+  opacity: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

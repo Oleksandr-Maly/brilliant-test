@@ -1,0 +1,24 @@
+@import '../../../../styles/__mixins.module.scss';
+@import '../../../../styles/__variables.module.scss';
+
+.heroHeader {
+  font-family: 'Clash Grotesk', Arial, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  @include respond('tablet') {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  @include respond('desktop') {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+
+  background: $gradientBackground;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

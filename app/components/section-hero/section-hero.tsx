@@ -1,34 +1,56 @@
 'use client';
 import styles from "./section-hero.module.scss";
 import buttonStyles from "@/components/gradient-button/gradient-button.module.scss";
-import CountersList from "@/app/components/section-hero/counters/counters-list";
+import AnimatedCountersList from "@/app/components/section-hero/animated-counters-list/animated-counters-list";
+import {useGSAP} from "@gsap/react";
+import {gsap} from "gsap";
+import AnimatedHeader from "@/app/components/section-hero/animated-header/animated-header";
 
 const SectionHero = () => {
-    return (
-        <section className={styles.heroSectionContainer}>
-            {/*            <Image src={heroImage} alt={'moon image'} className={styles.heroImage} />
-            <Image src={blob01} alt={'moon image'} className={styles.blob01} />
-            <Image src={blob02} alt={'moon image'} className={styles.blob02} />*/}
-            <h1 className={styles.heroHeader}>A new economic primitive <br/> for funding decentralized AI</h1>
-            <p>
-                We track, rank and pay for the best open source decentralized LLMs to compete against OpenAI
-            </p>
-            <div className={styles.heroButtonContainer}>
-                <button
-                    className={buttonStyles.outlineButton}
-                    data-content={'Buy Spice AI'}
-                    onClick={() => {
-                    }}
-                />
+    useGSAP(() => {
+        gsap.to('#header-animation-container',
+            {
+                scrollTrigger: {
+                    trigger: '#hero-section',
+                    start: '0% top',
+                    end: '10% top',
+                    scrub: 1,
+                    // markers: true,
+                },
+                y: '-10%',
+                color: 'white',
+            });
+    });
 
-                <button
-                    className={buttonStyles.textButton}
-                    data-content={'Try Now'}
-                    onClick={() => {
-                    }}
-                />
+    return (
+        <section id='hero-section'>
+            <div className={styles.countersAnimationContainer}>
+                <div id='header-animation-container' className={styles.heroSectionContainer}>
+                    {/*<h1 id='hero-header' className={styles.heroHeader}>*/}
+                    {/*    A new economic primitive <br/> for funding decentralized AI*/}
+                    {/*</h1>*/}
+                    <AnimatedHeader/>
+                    <p>
+                        We track, rank and pay for the best open source decentralized LLMs to compete against OpenAI
+                    </p>
+                    <div className={styles.heroButtonContainer}>
+                        <button
+                            className={buttonStyles.outlineButton}
+                            data-content={'Buy Spice AI'}
+                            onClick={() => {
+                            }}
+                        />
+
+                        <button
+                            className={buttonStyles.textButton}
+                            data-content={'Try Now'}
+                            onClick={() => {
+                            }}
+                        />
+                    </div>
+                </div>
+                <AnimatedCountersList/>
             </div>
-            <CountersList/>
         </section>
     );
 };

@@ -1,26 +1,30 @@
 @import '@/styles/__mixins.module.scss';
 @import '@/styles/__variables.module.scss';
 
+
+.countersAnimationContainer {
+  position: relative;
+}
+
 .heroSectionContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  //gap: 2.25rem; // 36px / 16px = 2.25rem
-
   height: 100vh;
-  gap: 1.5rem; // 24px / 16px = 1.5rem
+
+  gap: 1.5rem;
 
   @include respond('tablet') {
-    gap: 2rem; // 32px / 16px = 2rem
+    gap: 2rem;
   }
 
   @include respond('laptop') {
-    gap: 2.25rem; // 36px / 16px = 2.25rem
+    gap: 2.25rem;
   }
 
   @include respond('desktop') {
-    gap: 2.5rem; // 40px / 16px = 2.5rem
+    gap: 2.5rem;
   }
 }
 
@@ -53,29 +57,4 @@
   gap: 1.5rem;
 }
 
-.heroImage {
-  position: absolute;
-  width: 63.5rem; // 1016px / 16px = 63.5rem
-  height: 63.5rem; // 1016px / 16px = 63.5rem
-  top: 9.58625rem; // 153.38px / 16px = 9.58625rem
-  right: 0;
-  z-index: -1;
-}
 
-.blob01 {
-  position: absolute;
-  width: 63.5rem; // 1016px / 16px = 63.5rem
-  height: 63.5rem; // 1016px / 16px = 63.5rem
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.blob02 {
-  position: absolute;
-  width: 63.5rem; // 1016px / 16px = 63.5rem
-  height: 63.5rem; // 1016px / 16px = 63.5rem
-  top: 0;
-  right: 0;
-  z-index: -1;
-}

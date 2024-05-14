@@ -1,5 +1,5 @@
-import CounterItem from "@/app/components/section-hero/counters/counter-item/counter-item";
 import styles from './counters-list.module.scss';
+import CounterItem from "@/app/components/section-hero/animated-counters-list/counters-list/counter-item/counter-item";
 
 export interface CounterItemI {
     title: string;
